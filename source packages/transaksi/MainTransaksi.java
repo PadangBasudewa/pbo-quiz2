@@ -26,6 +26,7 @@ public class MainTransaksi extends javax.swing.JFrame {
      * Creates new form MainTransaksi
      */
     public MainTransaksi() {
+        setTitle("Transaksi");
         TrxComboModel comboModel = new TrxComboModel();
         this.cbModel = new DefaultComboBoxModel<>(comboModel.getNames().toArray()); // Set Combo items
         
@@ -275,7 +276,7 @@ public class MainTransaksi extends javax.swing.JFrame {
         String name = this.comboItems.getSelectedItem().toString(); // get selected item on comboItems;
         int qty = new Integer(this.txtJml.getText()); // get txtJml text as an Integer then;
         if(isDuplicate(name)) { // check jika nama duplicate;
-            updateQty(name, qty); // if so, add only the qty cell with the new inputed qty
+            updateQty(name, qty); // jika demikian, tambahkan hanya sel qty dengan qty yang baru diinput
         } else {
             tbModel.addRow(addItem(name, qty));
         }
