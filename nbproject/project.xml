@@ -5,6 +5,7 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>pbo-quiz2</name>
             <source-roots>
+                <root id="src.source%20packages.dir"/>
                 <root id="src.dir"/>
             </source-roots>
             <test-roots>
