@@ -274,7 +274,7 @@ public class MainTransaksi extends javax.swing.JFrame {
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         String name = this.comboItems.getSelectedItem().toString(); // get selected item on comboItems;
         int qty = new Integer(this.txtJml.getText()); // get txtJml text as an Integer then;
-        if(isDuplicate(name)) { // check if an item is a duplicate;
+        if(isDuplicate(name)) { // check jika nama duplicate;
             updateQty(name, qty); // if so, add only the qty cell with the new inputed qty
         } else {
             tbModel.addRow(addItem(name, qty));
